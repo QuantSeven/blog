@@ -1,4 +1,4 @@
-
+const utils = require('./utils')
 module.exports = {
   title:'村头柒哥',
   description: '个人笔记',
@@ -13,8 +13,9 @@ module.exports = {
         description: '个人笔记',
     }
   },
-  theme: '',
+  theme: '@vuepress/theme-vue',
   themeConfig: {
+      logo: '/images/avatar.png',
       // 搜索设置
       search: true,
       searchMaxSuggestions: 10,
@@ -26,15 +27,30 @@ module.exports = {
       // 作者
       author: 'QuantSeven',
       nav: [
-        { text: '笔记', link: '/note/Java/Java笔记.html' },
-        { text: '关于我',  link: '/about.html'},
-      ],
-      sidebar: 'auto'
+        { text: '编程技术', link: '/note/' },
+        { text: '生活兴趣', link: '/life/' },
+        { text: '关于我', link: '/about/' },
+      ] ,
+      // 侧边栏 用工具自动获取文件夹结构,auto自动形成侧边导航
+      sidebar: utils.rootFolder("./docs/"),
   },
   // 插件
   plugins: [
+    // 评论插件valine
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine', 
+        // options选项中的所有参数，会传给Valine的配置
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: '211iGfKcVvCGNUR4NQeITCHS-gzGzoHsz',
+          appKey: 'oiH0rzqpoTI8u3J71xR5dj81'
+        }
+      }
+    ],
     // 返回顶部按钮true显示、false不显示
-    ['@vuepress/back-to-top', false],
+    ['@vuepress/back-to-top', true],
 
     ['@vuepress/pwa', {
         // 如果设置为 true，VuePress 将自动生成并注册一个 Service Worker，用于缓存页面的内容以供离线使用（仅会在生产环境中启用）

@@ -1,8 +1,5 @@
 # Java笔记
 
-
-
-* [flag](#flag)
 * [函数重载](#函数重载)
 * [时间](#时间)
   * [JDK8以下时间日期API](#jdk8以下时间日期api)
@@ -33,13 +30,6 @@
   * [编程式修改FlushMode](#编程式修改flushmode)
   * [配置过滤器](#配置过滤器)
   * [使用execute方法回调方式实现](#使用execute方法回调方式实现)
-
-
-## flag
-
-
-* [https://www.yiibai.com/html/java/](https://www.yiibai.com/html/java/)
-
 
 
 ## 函数重载
