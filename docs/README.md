@@ -12,5 +12,5 @@ features:
   details: 生活中的琐事，以及我的兴趣爱好。
 - title: 关于我
   details: 我的个人简介，以及工作历程。
-footer: MIT Licensed | Copyright © 2011-present QuantSeven
+footer: MIT Licensed | Copyright © 2011-present QuantSeven 粤ICP备18041674号-1
 ---

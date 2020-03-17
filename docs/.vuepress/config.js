@@ -28,7 +28,10 @@ module.exports = {
       author: 'QuantSeven',
       nav: [
         { text: '编程技术', link: '/note/' },
-        { text: '生活兴趣', link: '/life/' },
+        { text: '开源项目', link: '/project/' },
+        { text: '在线文档', link: '/docs/' },
+        { text: '在线工具', link: '/tools/' },
+        { text: '技术博客', link: '/technology-blog/' },
         { text: '关于我', link: '/about/' },
       ] ,
       // 侧边栏 用工具自动获取文件夹结构,auto自动形成侧边导航
